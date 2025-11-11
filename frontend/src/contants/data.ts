@@ -67,3 +67,234 @@ export const COMPANY_LINKS = [
     { name: 'Press', link: '/press' },
     { name: 'Blog', link: '/blog' }
 ]
+
+
+export const NewArrivals_ITEM = [
+    {
+        id: 1,
+        name: 'Classic White T-Shirt',
+        price: 19.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=11',
+              altText: 'Classic White T-Shirt Front View'
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: 'Blue Denim Jeans',
+        price: 49.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=12',
+                altText: 'Blue Denim Jeans Front View'
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: 'Red Hoodie', 
+        price: 39.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=13',
+                altText: 'Red Hoodie Front View'
+            }]  
+    },
+    {
+        id: 4,
+        name: 'Black Leather Jacket',
+        price: 89.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=14',
+                altText: 'Black Leather Jacket Front View'
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: 'Floral Summer Dress',
+        price: 59.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=15',
+                altText: 'Floral Summer Dress Front View'
+            }
+        ]   
+    },
+    {
+        id: 6,
+        name: 'Running Sneakers',
+        price: 69.99,
+        image: [
+            {
+              url:'https://picsum.photos/300?random=16',
+                altText: 'Running Sneakers Side View'
+            }
+        ]  
+    },
+    {
+        id: 7,
+        name: 'Casual Chinos',
+        price: 44.99,
+        image: [
+            {
+                url:'https://picsum.photos/300?random=17',
+                altText: 'Casual Chinos Front View'
+            }
+        ]  
+    },
+    {
+        id: 8,
+        name: 'Striped Polo Shirt',
+        price: 29.99,
+        image: [
+            {
+                url:'https://picsum.photos/300?random=18',
+                altText: 'Striped Polo Shirt Front View'
+            }
+        ]  
+    },
+    {
+        id: 9,
+        name: 'Woolen Scarf',
+        price: 24.99,
+        image: [
+            {
+                url:'https://picsum.photos/300?random=19',
+                altText: 'Woolen Scarf Front View'
+            }
+        ]  
+    }
+]
+
+export const SelectedProduct = {
+    id: 1,
+    name: 'Classic White T-Shirt',
+    price: 19.99,
+    originalPrice: 29.99,
+    description: 'A timeless classic, this white t-shirt is made from 100% organic cotton, offering both comfort and style. Perfect for any casual occasion, it features a crew neck and short sleeves.',
+    brand: 'FashionCo',
+    material: '100% Organic Cotton',
+    size: ['S', 'M', 'L', 'XL'],
+    color: ['White', 'Black', 'Gray'],
+    images: [
+        {
+          url:'https://picsum.photos/400?random=21',
+            altText: 'Classic White T-Shirt Front View'
+        },
+        {
+          url:'https://picsum.photos/400?random=22',
+            altText: 'Classic White T-Shirt Back View'
+        },
+        {
+          url:'https://picsum.photos/400?random=23',
+            altText: 'Classic White T-Shirt Side View'
+        }
+    ]
+};
+
+export const SimilarProducts = [
+    {
+    id: 2,
+    name: 'Dress',
+    price: 19.99,
+    originalPrice: 29.99,
+    description: 'A timeless classic, this white t-shirt is made from 100% organic cotton, offering both comfort and style. Perfect for any casual occasion, it features a crew neck and short sleeves.',
+    brand: 'FashionCo',
+    material: '100% Organic Cotton',
+    size: ['S', 'M', 'L', 'XL'],
+    color: ['White', 'Black', 'Gray'],
+    images: [
+        {
+          url:'https://picsum.photos/400?random=21',
+            altText: 'Classic White T-Shirt Front View'
+        },
+        {
+          url:'https://picsum.photos/400?random=22',
+            altText: 'Classic White T-Shirt Back View'
+        },
+        {
+          url:'https://picsum.photos/400?random=23',
+            altText: 'Classic White T-Shirt Side View'
+        }
+    ]
+    },
+    {
+    id: 3,
+    name: 'Hoodie',
+    price: 19.99,
+    originalPrice: 29.99,
+    description: 'A timeless classic, this white t-shirt is made from 100% organic cotton, offering both comfort and style. Perfect for any casual occasion, it features a crew neck and short sleeves.',
+    brand: 'FashionCo',
+    material: '100% Organic Cotton',
+    size: ['S', 'M', 'L', 'XL'],
+    color: ['White', 'Black', 'Gray'],
+    images: [
+        {
+          url:'https://picsum.photos/400?random=21',
+            altText: 'Classic White T-Shirt Front View'
+        },
+        {
+          url:'https://picsum.photos/400?random=22',
+            altText: 'Classic White T-Shirt Back View'
+        },
+        {
+          url:'https://picsum.photos/400?random=23',
+            altText: 'Classic White T-Shirt Side View'
+        }
+    ]
+    },
+    {
+    id: 4,
+    name: 'Classic White T-Shirt',
+    price: 19.99,
+    originalPrice: 29.99,
+    description: 'A timeless classic, this white t-shirt is made from 100% organic cotton, offering both comfort and style. Perfect for any casual occasion, it features a crew neck and short sleeves.',
+    brand: 'FashionCo',
+    material: '100% Organic Cotton',
+    size: ['S', 'M', 'L', 'XL'],
+    color: ['White', 'Black', 'Gray'],
+    images: [
+        {
+          url:'https://picsum.photos/400?random=21',
+            altText: 'Classic White T-Shirt Front View'
+        },
+        {
+          url:'https://picsum.photos/400?random=22',
+            altText: 'Classic White T-Shirt Back View'
+        },
+        {
+          url:'https://picsum.photos/400?random=23',
+            altText: 'Classic White T-Shirt Side View'
+        }
+    ]
+    },
+    {
+    id: 5,
+    name: 'Shirt',
+    price: 19.99,
+    originalPrice: 29.99,
+    description: 'A timeless classic, this white t-shirt is made from 100% organic cotton, offering both comfort and style. Perfect for any casual occasion, it features a crew neck and short sleeves.',
+    brand: 'FashionCo',
+    material: '100% Organic Cotton',
+    size: ['S', 'M', 'L', 'XL'],
+    color: ['White', 'Black', 'Gray'],
+    images: [
+        {
+          url:'https://picsum.photos/400?random=21',
+            altText: 'Classic White T-Shirt Front View'
+        },
+        {
+          url:'https://picsum.photos/400?random=22',
+            altText: 'Classic White T-Shirt Back View'
+        },
+        {
+          url:'https://picsum.photos/400?random=23',
+            altText: 'Classic White T-Shirt Side View'
+        }
+    ]
+ }
+]
