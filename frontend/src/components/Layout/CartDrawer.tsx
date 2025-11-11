@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import CartContent from '../Cart/CartContent';
 
@@ -34,4 +33,4 @@ const CartDrawer = ({ drawerOpen, toggleDrawer }: CartDrawerProps) => {
   )
 }
 
-export default CartDrawer
+export default CartDrawer   
