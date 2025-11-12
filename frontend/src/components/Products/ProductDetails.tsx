@@ -135,7 +135,6 @@ const ProductDetails = () => {
                                         <th className='pr-4 font-medium'>Brand</th>
                                         <td>{SelectedProduct.brand}</td>
                                     </tr>
-                                    <br />
                                     <tr>
                                         <th className='pr-4 font-medium'>Material</th>
                                         <td>{SelectedProduct.material}</td>

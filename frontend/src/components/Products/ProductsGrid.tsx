@@ -1,6 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
+
+interface ImageProps{
+  url: string,
+  altText: string,
+}
 interface ProductsGridProps{
     data: DataProp[]
 }
@@ -15,14 +21,32 @@ interface DataProp{
     material: string,
     size: string[],
     color: string[],
-    images: object[]
+    images: ImageProps[]
 }
 
-const ProductsGrid:React.FC<ProductsGridProps> = (data) => {
+const ProductsGrid:React.FC<ProductsGridProps> = ({data}) => {
     console.log(data)
   return (
-    <div>
-      
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 '>
+        {
+          data.map((product,index)=>(
+            <Link to={`/product/${product.id}`} key={index} className='block' >
+              <div className='bg-white p-4 rounded-lg'>
+                <div className='w-full h-96 mb-4'>
+                  <img 
+                    src={product.images[0].url} 
+                    alt="Image Product" 
+                    className='w-full h-full object-cover rounded-lg'
+                  />
+                </div>
+                <h3 className='text-sm mb-2'>{product.name}</h3>
+                <p className='text-gray-500 font-medium text-sm tracking-tighter'>
+                  $ {product.price}
+                </p>
+              </div>
+            </Link>
+          ))
+        }
     </div>
   )
 }
