@@ -502,3 +502,45 @@ export const PlaholderProducts = [
     ]
  }
 ]
+
+export const Order_Item = [
+  {
+    id: 123,
+    createdAt: new Date(),
+    shippingAddress: {city: 'Da Nang', country: "VN"},
+    orderItems: [
+      {
+        name: 'Product 1',
+        image: 'https://picsum.photos/500/500?random=1'
+      }
+    ],
+    totalPrice: 100,
+    isPaid: true
+  },
+  {
+    id: 1321323,
+    createdAt: new Date(),
+    shippingAddress: {city: 'Hue', country: "VN"},
+    orderItems: [
+      {
+        name: 'Product 2',
+        image: 'https://picsum.photos/500/500?random=2'
+      }
+    ],
+    totalPrice: 100,
+    isPaid: true
+  },
+  {
+    id: 333,
+    createdAt: new Date(),
+    shippingAddress: {city: 'Ha Noi', country: "VN"},
+    orderItems: [
+      {
+        name: 'Product 4',
+        image: 'https://picsum.photos/500/500?random=3'
+      }
+    ],
+    totalPrice: 100,
+    isPaid: true
+  },
+];

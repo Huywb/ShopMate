@@ -5,15 +5,11 @@ import { FiEye, FiEyeOff } from "react-icons/fi"
 import { useState } from "react"
 import { toast } from "sonner"
 
-interface RegisterProps{
-    email: string,
-    password: string,
-    confirmPassword: string
-}
 
 const Register = () => {
     const {register,handleSubmit,formState : {errors}} = useForm({
         defaultValues: {
+            name: '',
             email: '',
             password: '',
             confirmPassword: '',
@@ -23,7 +19,7 @@ const Register = () => {
     const [showPassword,setShowPassword] = useState(false)
     const [showConfirmPassword,setShowConfirmPassword] = useState(false)
 
-    const handleSubmitLogin = (data:RegisterProps)=>{
+    const handleSubmitRegister = (data:RegisterProps)=>{
         if(data.password !== data.confirmPassword){
             toast("Password and confirmPassword need to correct")
         }else{
@@ -39,10 +35,17 @@ const Register = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-center mb-6">Hey there!</h2>
                 <p className="text-center mb-6">Register your user name and password</p>
+
+                <div className="mb-4">
+                    <label className="block text-sm font-semibold mb-2">Name</label>
+                    <input {...register('name')} required type="text" className="w-full p-2 border rounded" placeholder="Enter your email" />
+                </div>
+
                 <div className="mb-4">
                     <label className="block text-sm font-semibold mb-2">Email</label>
-                    <input {...register('email')} type="email" className="w-full p-2 border rounded" placeholder="Enter your email" />
+                    <input {...register('email')} required type="email" className="w-full p-2 border rounded" placeholder="Enter your email" />
                 </div>
+                
                 <div className="mb-4 relative">
                     <div className="absolute right-2 cursor-pointer bottom-0 -translate-y-[30%] " onClick={()=>setShowPassword(!showPassword)}>
                         {
@@ -53,7 +56,7 @@ const Register = () => {
                     </div>
                     
                     <label className="block text-sm font-semibold mb-2">Password</label>
-                    <input {...register('password')} type={showPassword ? "text" : "password"} className="w-full p-2 border rounded" placeholder="Enter your password" />
+                    <input {...register('password')} required type={showPassword ? "text" : "password"} className="w-full p-2 border rounded" placeholder="Enter your password" />
 
                 </div>
 
@@ -70,7 +73,7 @@ const Register = () => {
                     <input {...register('confirmPassword')} type={showConfirmPassword ? "text" : "password"} className="w-full p-2 border rounded" placeholder="Enter your Confirm Password" />
                     
                 </div>
-                <button onClick={handleSubmit(handleSubmitLogin)} type="submit" className="w-full bg-black text-white p-2 rounded-lg font-semibold
+                <button onClick={handleSubmit(handleSubmitRegister)} type="submit" className="w-full bg-black text-white p-2 rounded-lg font-semibold
                 hover:bg-gray-800 transition"> Register</button>
 
                 <p className="mt-6 text-center text-sm">
