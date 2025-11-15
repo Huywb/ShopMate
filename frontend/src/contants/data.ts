@@ -544,3 +544,29 @@ export const Order_Item = [
     isPaid: true
   },
 ];
+
+export const CheckOutITem = {
+  product: [
+  {
+    name: "Stylish Jacket",
+    size: 'M',
+    color : 'Black',
+    price: 120,
+    image :'https://picsum.photos/500/500?random=3'
+  },
+  {
+    name: "Stylish Jacket",
+    size: 'M',
+    color : 'Black',
+    price: 120,
+    image :'https://picsum.photos/500/500?random=3'
+  },
+  {
+    name: "Stylish Jacket",
+    size: 'M',
+    color : 'Black',
+    price: 120,
+    image :'https://picsum.photos/500/500?random=3'
+  }],
+  totalPice: 500
+}
