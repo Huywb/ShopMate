@@ -27,6 +27,7 @@ interface DataProp{
 const ProductsGrid:React.FC<ProductsGridProps> = ({data}) => {
     console.log(data)
   return (
+    
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 '>
         {
           data.map((product,index)=>(
