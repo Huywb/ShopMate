@@ -546,7 +546,7 @@ export const Order_Item = [
 ];
 
 export const CheckOutITem = {
-  product: [
+  products: [
   {
     name: "Stylish Jacket",
     size: 'M',
@@ -569,4 +569,34 @@ export const CheckOutITem = {
     image :'https://picsum.photos/500/500?random=3'
   }],
   totalPice: 500
+}
+
+export const CheckOrder = {
+  id : 123,
+  createdAt: new Date(),
+  checkoutItems :[
+    {
+      productId: 1,
+      name: "Jacket",
+      color: "White",
+      size: 'M',
+      price: 150,
+      quantity : 1,
+      image :'https://picsum.photos/500/500?random=3'
+    },
+    {
+      productId: 2,
+      name: "Jacket",
+      color: "White",
+      size: 'L',
+      price: 150,
+      quantity : 1,
+      image :'https://picsum.photos/500/500?random=44'
+    }
+  ],
+  shippingAddress: {
+    address: '123 Fashion Street',
+    city: "New York",
+    country: "USA"
+  }
 }
