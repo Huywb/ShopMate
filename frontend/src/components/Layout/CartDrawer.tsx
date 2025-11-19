@@ -12,6 +12,7 @@ const CartDrawer = ({ drawerOpen, toggleDrawer }: CartDrawerProps) => {
 
     const navigate = useNavigate()
     const handleCheckOut = ()=>{
+        toggleDrawer()
         navigate('/checkout')
     }
 

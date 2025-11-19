@@ -9,6 +9,7 @@ import CollectionPage from "./pages/CollectionPage"
 import ProductDetails from "./components/Products/ProductDetails"
 import CheckOut from "./components/Cart/CheckOut"
 import OrderConfirmation from "./pages/OrderConfirmation"
+import OrderDetailsPage from "./pages/OrderDetailsPage"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="product/:id" element={<ProductDetails />}></Route>
           <Route path="/checkout" element={<CheckOut />}></Route>
           <Route path="/order-confirmation" element={<OrderConfirmation />}></Route>
+          <Route path="/order/:id" element={<OrderDetailsPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,3 @@
-import { id } from "zod/locales";
 
 
 export const MENU_ITEMS = [
@@ -599,4 +598,38 @@ export const CheckOrder = {
     city: "New York",
     country: "USA"
   }
+}
+
+export const mockOrderDetails = {
+    id : 1,
+    createdAt: new Date(),
+    isPaid: true,
+    isDelivered: false,
+    paymenMethod: 'Paypal',
+    shippingMethod: 'Standard',
+    shippingAddress: {city: 'New York',country: "USA"},
+    orderItems: [
+      {
+        productId: 1,
+        name: 'jacket',
+        price: 120,
+        quantity: 2,
+        image: 'https://picsum.photos/500/500?random=25'
+      },
+      {
+        productId: 2,
+        name: 'Dress',
+        price: 120,
+        quantity: 2,
+        image: 'https://picsum.photos/500/500?random=23'
+      },
+      {
+        productId: 3,
+        name: 'T-Shrit',
+        price: 120,
+        quantity: 2,
+        image: 'https://picsum.photos/500/500?random=52'
+      }
+    ]
+
 }
