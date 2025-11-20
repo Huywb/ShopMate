@@ -1,15 +1,17 @@
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 interface PaypalButtonProps {
-  amount: string;
+  amount: number;
   onSuccess: () => void;
 }
 
 const PaypalButton: React.FC<PaypalButtonProps> = ({ amount, onSuccess }) => {
+  if (!amount || amount <= 0) return null;
+
   return (
     <PayPalScriptProvider
       options={{
-        clientId:"AbC_kdoP_8fO-emiRNB345EeTeaF4ukd-X6aRdUPD_wa0fL4yag9dZ8YzjPlEMUrN225sp075j33nopc",
+        "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,
       }}
     >
       <PayPalButtons
@@ -19,16 +21,18 @@ const PaypalButton: React.FC<PaypalButtonProps> = ({ amount, onSuccess }) => {
             purchase_units: [
               {
                 amount: {
-                  value: amount, 
+                  value: amount.toString(),
                 },
               },
             ],
           });
         }}
-        onApprove={(data, actions) => {
-          return actions.order!.capture().then(() => {
-            onSuccess();
-          });
+        onApprove={async (data, actions) => {
+          await actions.order!.capture();
+          onSuccess();
+        }}
+        onError={(err) => {
+          console.error("PayPal Error:", err);
         }}
       />
     </PayPalScriptProvider>

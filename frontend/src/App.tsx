@@ -10,6 +10,12 @@ import ProductDetails from "./components/Products/ProductDetails"
 import CheckOut from "./components/Cart/CheckOut"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderDetailsPage from "./pages/OrderDetailsPage"
+import MyOrders from "./pages/MyOrders"
+import AdminLayout from "./components/Admin/AdminLayout"
+import UserAdmin from "./components/Admin/UserAdmin"
+import ProductAdmin from "./components/Admin/ProductAdmin"
+import OrderAdmin from "./components/Admin/OrderAdmin"
+import AdminDashboard from "./components/Admin/AdminDashboard"
 
 function App() {
 
@@ -27,6 +33,15 @@ function App() {
           <Route path="/checkout" element={<CheckOut />}></Route>
           <Route path="/order-confirmation" element={<OrderConfirmation />}></Route>
           <Route path="/order/:id" element={<OrderDetailsPage />}></Route>
+          <Route path="/my-orders" element={<MyOrders />}></Route>
+        </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="dashboard" element={<AdminDashboard />}></Route>
+          <Route path="users" element={<UserAdmin />}></Route>
+          <Route path="products" element={<ProductAdmin />}></Route>
+          <Route path="products/:id" element={<ProductAdmin />}></Route>
+          <Route path="orders/:id" element={<OrderAdmin />}></Route>
+          <Route path="orders" element={<OrderAdmin />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
