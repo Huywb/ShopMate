@@ -68,7 +68,7 @@ const OrderDetailsPage = () => {
                         ))
                     }
                 </div>
-                <Link to={'/'} className="pt-4 flex items-center gap-2 text-blue-400 hover:text-blue-600 transition duration-300"><FcPrevious/> Back to my order</Link>
+                <Link to='/my-orders' className="pt-4 flex items-center gap-2 text-blue-400 hover:text-blue-600 transition duration-300"><FcPrevious/> Back to my order</Link>
             </div>
 
         </div>

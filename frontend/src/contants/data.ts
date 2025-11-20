@@ -1,4 +1,12 @@
+import { FaUsers } from "react-icons/fa";
 
+
+export const MENU_ADMIN = [
+    { name: 'Users', link: '/admin/users' },
+    { name: 'Products', link: '/admin/products' },
+    { name: 'Orders', link: '/admin/orders' },
+    { name: 'Shop', link: '/' },
+]
 
 export const MENU_ITEMS = [
     { name: 'Men', link: '/men' },
@@ -633,3 +641,30 @@ export const mockOrderDetails = {
     ]
 
 }
+
+export const ORDER_LIST = [
+  {
+    id: '645654dasdasd67dasd',
+    user: 'Admin User',
+    totalPrice:'199.99',
+    status: 'Delivered'
+  },
+  {
+    id: '6dsad67dasd423432432',
+    user: 'User',
+    totalPrice:'199.99',
+    status: 'Processing'
+  },
+  {
+    id: '64fdsfsdasd67dasd',
+    user: 'Admin User',
+    totalPrice:'149.99',
+    status: 'Delivered'
+  },
+  {
+    id: '645Dsadasdasd67dasd',
+    user: 'User',
+    totalPrice:'699.99',
+    status: 'Processing'
+  }
+]

@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { Order_Item } from '../contants/data'
+import { useNavigate } from 'react-router-dom'
 
 const MyOrders = () => {
 
     const [orders,setOrders] = useState([])
-
-
+    const navigate = useNavigate()
     console.log(orders)
     useEffect(()=>{
         setOrders(Order_Item)
     },[])
+    
+    const handleSelectOrder = (id: number | string)=>{
+        navigate(`/order/${id}`)
+    }
 
 
   return (  
@@ -32,7 +36,7 @@ const MyOrders = () => {
                     {
                         orders.length > 0 ? (
                             orders.map((item,index)=>(
-                                <tr key={index} className='border-b hover:border-gray-50 cursor-pointer'>
+                                <tr onClick={()=>handleSelectOrder(item.id)} key={index} className='border-b hover:border-gray-50 cursor-pointer'>
                                     <td className='py-2 px-2 sm:py-4'>
                                         <img className='w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-lg' src={item.orderItems[0].image} alt={item.orderItems[0].name} />
                                     </td>
