@@ -4,7 +4,7 @@ import { ORDER_LIST } from '../../contants/data'
 
 const AdminDashboard = () => {
   return (
-    <div className='p-10  h-screen flex flex-col gap-8 bg-gray-50'>
+    <div className='h-screen flex flex-col gap-8 bg-gray-50'>
       <h1 className='text-4xl font-bold'>Admin Dashboard</h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
             <div className='flex flex-col  shadow-lg p-4'>

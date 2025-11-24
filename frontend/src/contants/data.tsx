@@ -1,11 +1,13 @@
 import { FaUsers } from "react-icons/fa";
-
+import { AiFillProduct } from "react-icons/ai";
+import { FaCartArrowDown } from "react-icons/fa6";
+import { IoHome } from "react-icons/io5";
 
 export const MENU_ADMIN = [
-    { name: 'Users', link: '/admin/users' },
-    { name: 'Products', link: '/admin/products' },
-    { name: 'Orders', link: '/admin/orders' },
-    { name: 'Shop', link: '/' },
+    { name: 'Users', link: '/admin/users',icons: <FaUsers /> },
+    { name: 'Products', link: '/admin/products',icons:<AiFillProduct />  },
+    { name: 'Orders', link: '/admin/orders',icons:<FaCartArrowDown />  },
+    { name: 'Shop', link: '/',icons:<IoHome />  },
 ]
 
 export const MENU_ITEMS = [
@@ -666,5 +668,222 @@ export const ORDER_LIST = [
     user: 'User',
     totalPrice:'699.99',
     status: 'Processing'
+  }
+]
+
+export const ADMIN_USERS = [
+  {
+    id: 1,
+    name: 'Admin User',
+    email: 'admin@example.com',
+    role: 'admin',
+    password: 'admin123'
+  },  
+  {
+    id: 2,
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    role: 'customer',
+    password: 'john123'
+  },  
+  {
+    id: 3,
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    role: 'customer',
+    password: 'jane123'
+  }
+]
+
+export const PRODUCT_ADMIN = [
+  {
+    id: 1,
+    name: 'Product 1',
+    description: 'This is a description for Product 1',
+    stock: 50,
+    size: [ 'S', 'M', 'L' ],
+    color: 'Blue',
+    images: ['https://picsum.photos/500/500?random=1',
+      'https://picsum.photos/500/500?random=11',
+    ],
+    price: 29.99,
+    sku: 'PROD001'
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    description: 'This is a description for Product 2',
+    stock: 100,
+    size: [ 'S', 'M', 'L' ],
+    color: 'Red',
+    images: ['https://picsum.photos/500/500?random=2',
+      'https://picsum.photos/500/500?random=21',
+    ],
+    price: 39.99,
+    sku: 'PROD002'
+  },
+  {
+    id: 3,  
+    name: 'Product 3',
+    description: 'This is a description for Product 3',
+    stock: 50,
+    size: [ 'S', 'M', 'L' ],
+    color: 'Blue',
+    images: ['https://picsum.photos/500/500?random=3',
+      'https://picsum.photos/500/500?random=31',
+      'https://picsum.photos/500/500?random=32'
+    ],
+    price: 19.99,
+    sku: 'PROD003'
+  },
+  {
+    id: 4,  
+    name: 'Product 4',
+    description: 'This is a description for Product 4',
+    stock: 75,
+    size: [ 'S', 'M', 'L' ],
+    color: 'Green',
+    images: ['https://picsum.photos/500/500?random=4'],
+    price: 49.99,
+    sku: 'PROD004'
+  },
+  {
+    id: 5,  
+    name: 'Product 5',
+    description: 'This is a description for Product 5',
+    stock: 20,
+    size: [ 'S' ],
+    color: 'Black',
+    images: ['https://picsum.photos/500/500?random=5'],
+    price: 59.99,
+    sku: 'PROD005'
+  },
+  {
+    id: 6,  
+    name: 'Product 6',
+    description: 'This is a description for Product 6',
+    stock: 30,
+    size: [ 'S', 'M', 'L' ],
+    color: 'White',
+    images: ['https://picsum.photos/500/500?random=6'],
+    price: 24.99,
+    sku: 'PROD006'
+  },
+  {
+    id: 7,  
+    name: 'Product 7',
+    description: 'This is a description for Product 7',
+    stock: 60,
+    size: [ 'S', 'M', 'L' ],
+    color: 'Yellow',
+    images: ['https://picsum.photos/500/500?random=7'],
+    price: 34.99,
+    sku: 'PROD007'
+  },
+  {
+    id: 8,  
+    name: 'Product 8',
+    description: 'This is a description for Product 8',
+    stock: 80,
+    size: [ 'L' ],
+    color: 'Purple',
+    images: ['https://picsum.photos/500/500?random=8'],
+    price: 44.99,
+    sku: 'PROD008'
+  },
+  {
+    id: 9,  
+    name: 'Product 9',
+    description: 'This is a description for Product 9',
+    stock: 40,
+    size: [ 'XL' ],
+    color: 'Orange',
+    images: ['https://picsum.photos/500/500?random=9'],
+    price: 54.99,
+    sku: 'PROD009'
+  },
+  {
+    id: 10,  
+    name: 'Product 10',
+    description: 'This is a description for Product 10',
+    stock: 90,
+    size: [ 'S'],
+    color: 'Pink',
+    images: ['https://picsum.photos/500/500?random=10'],
+    price: 64.99,
+    sku: 'PROD010'
+  },
+  {
+    id: 11,  
+    name: 'Product 11',
+    description: 'This is a description for Product 11',
+    stock: 55,
+    size: [ 'L' ],
+    color: 'Brown',
+    images: ['https://picsum.photos/500/500?random=11'],
+    price: 74.99,
+    sku: 'PROD011'
+  },
+  {
+    id: 12,  
+    name: 'Product 12',
+    description: 'This is a description for Product 12',
+    stock: 65,
+    size: [ 'S' ],
+    color: 'Gray',
+    images: ['https://picsum.photos/500/500?random=12'],
+    price: 84.99,
+    sku: 'PROD012'
+  },
+  {
+    id: 13,  
+    name: 'Product 13',
+    description: 'This is a description for Product 13',
+    stock: 70,
+    size: [ 'XL' ],
+    color: 'Cyan',
+    images: ['https://picsum.photos/500/500?random=13'],
+    price: 94.99,
+    sku: 'PROD013'
+  },
+  {
+    id: 14,  
+    name: 'Product 14',
+    description: 'This is a description for Product 14',
+    stock: 85,
+    size: [ 'M' ],
+    color: 'Magenta',
+    images: ['https://picsum.photos/500/500?random=14'],
+    price: 14.99,
+    sku: 'PROD014'
+  },
+  {
+    id: 15,  
+    name: 'Product 15',
+    description: 'This is a description for Product 15',
+    stock: 95,
+    size: [ 'L' ],
+    color: 'Teal',
+    images: [ 'https://picsum.photos/500/500?random=15',
+      'https://picsum.photos/500/500?random=16',
+      'https://picsum.photos/500/500?random=17'
+    ],
+    price: 24.99,
+    sku: 'PROD015'
+  },
+  { 
+    id: 16,  
+    name: 'Product 16',
+    description: 'This is a description for Product 16',
+    stock: 45,
+    size: [ 'S' ],
+    color: 'Olive',
+    images: [
+      'https://picsum.photos/500/500?random=16',
+      'https://picsum.photos/500/500?random=17',
+      'https://picsum.photos/500/500?random=18'
+    ],
+    price: 34.99,
+    sku: 'PROD016'
   }
 ]

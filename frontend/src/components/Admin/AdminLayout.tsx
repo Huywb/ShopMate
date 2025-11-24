@@ -41,8 +41,8 @@ const AdminLayout = () => {
             <div className='flex flex-col gap-6 py-4'>
                 {
                     MENU_ADMIN.map((item,index)=>(
-                        <Link className={`w-full ${pathname === item.link ? "bg-gray-600" : ''} py-4 p-2 rounded-lg`} to={`${item.link}`}>
-                            {item.name}
+                        <Link key={index} className={`w-full flex gap-2 items-center text-xl ${pathname === item.link ? "bg-gray-600" : ''} py-4 p-2 rounded-lg`} to={`${item.link}`}>
+                            {item.icons} {item.name}
                         </Link>
                     ))
                 }
@@ -53,7 +53,7 @@ const AdminLayout = () => {
             </button>
       </div>
 
-      <div className=' p-6 overflow-auto w-full h-screen '>
+      <div className=' p-16 overflow-auto w-full h-screen '>
         <Outlet></Outlet>
       </div>
     </div>

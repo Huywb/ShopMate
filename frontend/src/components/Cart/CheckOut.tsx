@@ -128,7 +128,7 @@ const CheckOut = () => {
                         <div>
                             <h3 className="text-lg mb-4">Pay with Paypal</h3>
                             <PaypalButton 
-                                amount={'100'} 
+                                amount={100} 
                                 onSuccess={()=>handleSuccess}
                             />
                         </div>
