@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { ADMIN_USERS, ORDER_LIST } from '../../contants/data'
+import { useState } from 'react'
+import { ADMIN_USERS } from '../../contants/data'
 import { toast } from 'sonner'
-import { FaCheck } from "react-icons/fa6";
 
 const UserAdmin = () => {
   const [role,setRole] = useState('customer')

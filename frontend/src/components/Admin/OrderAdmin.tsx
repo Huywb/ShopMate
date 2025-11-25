@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { ORDER_LIST } from '../../contants/data'
 import { toast } from 'sonner'
 
@@ -42,7 +42,7 @@ const OrderAdmin = () => {
                                 <select name="" id="" value={item.status} onChange={(e)=>handleChangeStatus(item.id, e.target.value)}>
                                   {
                                     ['Pending','Processing','Shipped','Delivered','Cancelled'].map((status,index) =>(
-                                      <option value={status}>{status}</option>
+                                      <option key={index} value={status}>{status}</option>
                                     ))
                                   }
                                 </select>  

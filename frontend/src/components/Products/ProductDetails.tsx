@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { SelectedProduct, SimilarProducts } from '../../contants/data'
-import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import ProductsGrid from './ProductsGrid'
 

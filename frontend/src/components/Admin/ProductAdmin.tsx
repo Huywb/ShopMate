@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ADMIN_USERS, PRODUCT_ADMIN, SIZE } from '../../contants/data'
+import {  PRODUCT_ADMIN, SIZE } from '../../contants/data'
 import { toast } from 'sonner'
 import { FaImage } from "react-icons/fa6";
 
