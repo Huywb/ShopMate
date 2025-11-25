@@ -887,3 +887,7 @@ export const PRODUCT_ADMIN = [
     sku: 'PROD016'
   }
 ]
+
+export const SIZE = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
+
+export const COLOR = ['Red', 'Blue', 'Green', 'Black', 'White', 'Yellow', 'Purple', 'Gray'];
