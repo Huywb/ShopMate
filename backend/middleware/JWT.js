@@ -13,7 +13,7 @@ export const verifyJWTToken = (req,res,next)=>{
         if (!authHeader || !authHeader.startsWith("Bearer ")) {
         return res.status(401).json({ message: "Unauthorized" });
         }
-        cosnt token = authHeader.split(" ")[1];
+        const token = authHeader.split(" ")[1];
         if(!token){
             return res.status(401).json({message:"Unauthorized"})
         }
@@ -29,3 +29,4 @@ export const verifyJWTToken = (req,res,next)=>{
         return res.status(500).json({message:"Server Error",error:error.message})
     }
 }
+
